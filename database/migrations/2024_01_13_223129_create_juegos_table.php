@@ -9,7 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    // En el archivo create_usuarios_table.php
+
     public function up()
     {
         Schema::create('juegos', function (Blueprint $table) {
@@ -18,10 +18,11 @@ return new class extends Migration
             $table->text('descripcion');
             $table->decimal('precio', 8, 2);
             $table->string('categoria');
+            $table->string('imagen_ruta');
+            $table->decimal('stock', 2, 0);
             $table->timestamps();
         });
     }
-
 
     /**
      * Reverse the migrations.
