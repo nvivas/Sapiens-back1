@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Juego;
+use App\Http\Controllers\JuegoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +25,5 @@ Route::get('image/{id}', function ($id) {
     return response($juego->image, 200)
         ->header('Content-Type', $juego->mime);
 });
+
+Route::get('/juegos/{id}', [JuegoController::class, 'show']);

@@ -10,6 +10,7 @@ class JuegosSeeder extends Seeder
     public function run()
     {
         // Crear los Juegos para la BBDD
+        // php artisan db:seed --class=JuegosSeeder
         $juegos = [
             [
                 'nombre' => 'Welcome to perfecto hogar',
@@ -36,6 +37,31 @@ class JuegosSeeder extends Seeder
                 'categoria' => 'Familiar',
                 'stock' => 0,
                 'imagen_ruta' => 'pocimas-y-brebajes.jpg',
+            ],
+            [
+                'nombre' => 'Castillos de borgoña - 20º Aniversario',
+                'descripcion' => 'Para celebrar el 20 aniversario de uno de los juegos de mesa más exitosos, la editorial Alea nos presenta una edición remodelada propia de tan señalada fecha. Esta nueva edición incluye nuevos componentes: losetas más gruesas, todas las expansiones (incluyendo las que permiten un modo de juego en solitario y otro por equipos), y nuevas ilustraciones de losetas y tablero, éste de doble cara para elegir según el número de jugadores.',
+                'precio' => 45.95,
+                'categoria' => 'Euro',
+                'stock' => 5,
+                'imagen_ruta' => 'castillos-de-borgoña.jpg',
+            ],
+            [
+                'nombre' => 'Root',
+                'descripcion' => 'Root es un juego de mesa asimétrico previsto para 2 a 4 participantes, en el que cada uno escogerá su facción y tratará de conquistar el bosque de Root.
+                Cada facción se juega de una manera diferente, tiene diferentes componentes y en turnos y estrategia única.',
+                'precio' => 53.95,
+                'categoria' => 'Euro',
+                'stock' => 0,
+                'imagen_ruta' => 'root.jpg',
+            ],
+            [
+                'nombre' => 'Patchwork',
+                'descripcion' => 'El juego Patchwork es un juego de puzzles y estrategia exclusivo para dos jugadores. Un juego de mecánicas sencillas y fácil explicación que guarda más profundidad de lo que parece en un principio. Estos dos jugadores compiten por tener y tejer la colcha más completa. El que menos huecos tenga al final de la partida y más botones consiga será quien gane la partida de Patchwork.',
+                'precio' => 23.99,
+                'categoria' => 'Puzzle',
+                'stock' => 0,
+                'imagen_ruta' => 'patchwork.jpg',
             ],
         ];
 
