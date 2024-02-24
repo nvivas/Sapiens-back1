@@ -17,7 +17,7 @@ use App\Http\Controllers\JuegoController;
 
 Route::group(['middleware' => ['cors']], function () {
     //Rutas a las que se permitirá acceso
-    Route::get('juegos', 'App\Http\Controllers\JuegoController@index');
+    Route::get('juegos/{id}', 'App\Http\Controllers\JuegoController@index');
 });
 
 Route::get('image/{id}', function ($id) {
@@ -26,4 +26,5 @@ Route::get('image/{id}', function ($id) {
         ->header('Content-Type', $juego->mime);
 });
 
-Route::get('/juegos/{id}', [JuegoController::class, 'show']);
+Route::get('/juegos', [JuegoController::class, 'index']);
+Route::get('/juegos/{id}', [JuegoController::class, 'obtenerJuego']);

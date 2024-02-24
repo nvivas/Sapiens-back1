@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Models\Juego;
 use App\Http\Controllers\Controller;
 
-class JuegoController extends Controller
+class ImagenController extends Controller
 {
     public function store(Request $request)
     {

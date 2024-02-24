@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Juego;
-use Illuminate\Http\Client\Request;
+use Illuminate\Http\Response;
 
 class JuegoController extends Controller
 {
@@ -12,14 +12,12 @@ class JuegoController extends Controller
         return Juego::all();
     }
 
-    public function getGamesId(Request $request)
-    {
-        if ($request->has('id')) {
-            $id = $request->input('id');
-            $juego = Juego::where('id', $id)->first();
+    public function obtenerJuego($id) {
+        $juego = Juego::find($id);
+        if ($juego) {
             return response()->json($juego);
         } else {
-            return $this->getAllGames();
+            return response()->json(['error' => 'Juego no encontrado'], Response::HTTP_NOT_FOUND);
         }
     }
 }
