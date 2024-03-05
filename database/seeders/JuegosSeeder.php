@@ -21,7 +21,7 @@ class JuegosSeeder extends Seeder
                 'precio' => 36.00,
                 'categoria' => 'Familiar',
                 'stock' => 10,
-                'imagen_ruta' => 'welcome-coleccionista.jpg',
+                'imagen_ruta' => 'welcome-coleccionista.png',
 
             ],
             [
@@ -36,7 +36,7 @@ class JuegosSeeder extends Seeder
                 'precio' => 41.15,
                 'categoria' => 'Familiar',
                 'stock' => 0,
-                'imagen_ruta' => 'pocimas-y-brebajes.jpg',
+                'imagen_ruta' => 'pocimas-y-brebajes.png',
             ],
             [
                 'nombre' => 'Castillos de borgoña - 20º Aniversario',
@@ -44,7 +44,7 @@ class JuegosSeeder extends Seeder
                 'precio' => 45.95,
                 'categoria' => 'Euro',
                 'stock' => 5,
-                'imagen_ruta' => 'castillos-de-borgoña.jpg',
+                'imagen_ruta' => 'castillos-de-borgoña.png',
             ],
             [
                 'nombre' => 'Root',
@@ -61,7 +61,7 @@ class JuegosSeeder extends Seeder
                 'precio' => 23.99,
                 'categoria' => 'Puzzle',
                 'stock' => 0,
-                'imagen_ruta' => 'patchwork.jpg',
+                'imagen_ruta' => 'patchwork.png',
             ],
         ];
 

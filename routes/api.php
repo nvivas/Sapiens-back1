@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Juego;
 use App\Http\Controllers\JuegoController;
+use App\Http\Controllers\PurchaseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,6 @@ Route::get('image/{id}', function ($id) {
 });
 
 Route::get('/juegos', [JuegoController::class, 'index']);
+Route::post('/juegos', [JuegoController::class, 'store']);
 Route::get('/juegos/{id}', [JuegoController::class, 'obtenerJuego']);
+Route::post('/purchase/{id}', [PurchaseController::class, 'addToCart']);
