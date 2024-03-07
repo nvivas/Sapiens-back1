@@ -30,4 +30,5 @@ Route::get('image/{id}', function ($id) {
 Route::get('/juegos', [JuegoController::class, 'index']);
 Route::post('/juegos', [JuegoController::class, 'store']);
 Route::get('/juegos/{id}', [JuegoController::class, 'obtenerJuego']);
-Route::post('/purchase/{id}', [PurchaseController::class, 'addToCart']);
+Route::get('/juegos/{nombre}', [JuegoController::class, 'obtenerJuegoNombre']);
+Route::post('/juegos', 'JuegosController@store');

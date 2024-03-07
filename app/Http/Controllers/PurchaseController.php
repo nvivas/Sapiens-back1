@@ -9,10 +9,10 @@ class PurchaseController extends Controller
 {
     public function addToCart($id)
     {
-        try {
-            $juego = Juego::findOrFail($id);
+        $juego = Juego::findOrFail($id);
+        if ($juego) {
             return response()->json(['message' => 'Juego agregado al carrito'], 200);
-        } catch (\Exception $e) {
+        } else {
             return response()->json(['message' => 'Error al agregar el juego al carrito'], 500);
         }
     }
