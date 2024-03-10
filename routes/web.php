@@ -28,3 +28,7 @@ Route::middleware([
 });
 
 Route::post('/upload-image', 'App\Http\Controllers\ImageController@upload')->name('image.upload');
+
+Route::get('/', function () {
+    return redirect()->route('login');
+});
