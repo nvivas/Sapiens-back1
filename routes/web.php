@@ -26,5 +26,3 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-
-Route::post('/upload-image', 'App\Http\Controllers\ImageController@upload')->name('image.upload');

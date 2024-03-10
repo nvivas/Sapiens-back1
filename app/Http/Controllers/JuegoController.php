@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Juego;
 use Illuminate\Http\Response;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class JuegoController extends Controller
 {
@@ -22,51 +22,15 @@ class JuegoController extends Controller
         }
     }
 
-    public function obtenerJuegoNombre($nombre) {
-        $juego = Juego::find($nombre);
+    public function obtenerJuegoPorNombre($nombre) {
+        $juego = Juego::where('nombre', $nombre)->first();
+
         if ($juego) {
             return response()->json($juego);
         } else {
-            return response()->json(['error' => 'Juego no encontrado'], Response::HTTP_NOT_FOUND);
+            // Agrega un mensaje de depuración si no se encuentra el juego
+            Log::debug('Juego no encontrado para el nombre: ' . $nombre);
+            return response()->json(['error' => 'Juego no encontrado'], 404);
         }
-    }
-
-    // public function store(Request $request)
-    // {
-    //     $validatedData = $request->validate([
-    //         'nombre' => 'required|string|max:255',
-    //         'descripcion' => 'required|string',
-    //         'precio' => 'required|numeric',
-    //         'categoria' => 'required|string|max:255',
-    //         'stock' => 'required|integer'
-    //     ]);
-
-    //     if ($request->hasFile('imagen_ruta')) {
-    //         $imagePath = $request->file('imagen_ruta')->store('imagen/juego');
-    //         $validatedData['imagen_ruta'] = $imagePath;
-    //     }
-
-    //     $juego = Juego::create($validatedData);
-
-    //     return response()->json($juego, 201);
-    // }
-
-    public function store(Request $request)
-    {
-        $juego = new Juego();
-        $juego->nombre = $request->input('nombre');
-        $juego->descripcion = $request->input('descripcion');
-        $juego->precio = $request->input('precio');
-        $juego->categoria = $request->input('categoria');
-        $juego->stock = $request->input('stock');
-        // Guarda la imagen en tu sistema de archivos o en la base de datos, según tu preferencia
-        if ($request->hasFile('imagen')) {
-            $imagenNombre = $request->file('imagen')->getClientOriginalName();
-            $request->file('imagen')->storeAs('public/imagenes', $imagenNombre);
-            $juego->imagen = $imagenNombre;
-        }
-        $juego->save();
-
-        return response()->json(['message' => 'Juego creado exitosamente'], 201);
     }
 }

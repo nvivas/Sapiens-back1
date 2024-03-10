@@ -22,7 +22,6 @@ class JuegosSeeder extends Seeder
                 'categoria' => 'Familiar',
                 'stock' => 10,
                 'imagen_ruta' => 'welcome-coleccionista.png',
-
             ],
             [
                 'nombre' => 'Pocimas y Brebajes',
@@ -62,6 +61,95 @@ class JuegosSeeder extends Seeder
                 'categoria' => 'Puzzle',
                 'stock' => 0,
                 'imagen_ruta' => 'patchwork.png',
+            ],
+            [
+                'nombre' => 'Gloomhaven',
+                'descripcion' => 'Gloomhaven es un juego de mesa cooperativo de estilo dungeon crawler con un fuerte énfasis en el desarrollo del personaje. Los jugadores forman parte de un grupo de mercenarios en un mundo oscuro y en constante cambio, donde las decisiones tienen consecuencias duraderas.',
+                'precio' => '140.00',
+                'categoria' => 'Aventura',
+                'imagen_ruta' => 'gloomhaven.jpg',
+                'stock' => 15
+            ],
+            [
+                'nombre' => 'Scythe',
+                'descripcion' => 'Scythe es un juego de estrategia ambientado en un universo alternativo de Europa del Este en los años 20. Los jugadores toman el papel de líderes de una facción intentando expandir su imperio, cosechar recursos y luchar por el control de la tierra.',
+                'precio' => '80.00',
+                'categoria' => 'Estrategia',
+                'imagen_ruta' => 'scythe.jpg',
+                'stock' => 20
+            ],
+            [
+                'nombre' => 'Wingspan',
+                'descripcion' => 'Wingspan es un juego de mesa de gestión de motores y colección de aves. Los jugadores compiten para construir la mejor reserva de aves utilizando cartas y dados, cada uno representando una especie de ave única con habilidades especiales.',
+                'precio' => '60.00',
+                'categoria' => 'Familiar',
+                'imagen_ruta' => 'wingspan.jpg',
+                'stock' => 25
+            ],
+            [
+                'nombre' => 'Terraforming Mars',
+                'descripcion' => 'Terraforming Mars es un juego de estrategia donde los jugadores trabajan juntos para transformar Marte en un planeta habitable. Los jugadores compiten por acumular recursos y mejorar las condiciones del planeta para ganar puntos de victoria.',
+                'precio' => '70.00',
+                'categoria' => 'Estrategia',
+                'imagen_ruta' => 'terraforming_mars.jpg',
+                'stock' => 18
+            ],
+            [
+                'nombre' => 'Everdell',
+                'descripcion' => 'Everdell es un juego de mesa de construcción de mazos y colocación de trabajadores con temática de bosque. Los jugadores construyen su propia ciudad en el bosque, recolectando recursos y estableciendo edificios para atraer a criaturas del bosque y ganar puntos de victoria.',
+                'precio' => '50.00',
+                'categoria' => 'Familiar',
+                'imagen_ruta' => 'everdell.jpg',
+                'stock' => 22
+            ],
+            [
+                'nombre' => 'Tapestry',
+                'descripcion' => 'Tapestry es un juego de mesa de civilización donde los jugadores construyen sus propias civilizaciones desde los albores de la historia hasta la era futurista. Utilizan cartas y fichas para explorar, expandirse, innovar y finalmente alcanzar la victoria.',
+                'precio' => '75.00',
+                'categoria' => 'Estrategia',
+                'imagen_ruta' => 'tapestry.jpg',
+                'stock' => 18
+            ],
+            [
+                'nombre' => 'Gloomhaven: Jaws of the Lion',
+                'descripcion' => 'Gloomhaven: Jaws of the Lion es una versión más accesible y compacta del popular juego de mesa Gloomhaven. Ofrece una experiencia de juego similar pero con un aprendizaje más suave y una introducción gradual a las mecánicas del juego.',
+                'precio' => '50.00',
+                'categoria' => 'Aventura',
+                'imagen_ruta' => 'gloomhaven_jaws_of_the_lion.jpg',
+                'stock' => 12
+            ],
+            [
+
+                'nombre' => 'Scythe: Rise of Fenris',
+                'descripcion' => 'Scythe: Rise of Fenris es una expansión para el juego de mesa Scythe que introduce una campaña narrativa que se juega a lo largo de múltiples partidas. Los jugadores descubrirán nuevos elementos de juego y tomarán decisiones que afectarán el resultado de la historia.',
+                'precio' => '30.00',
+                'categoria' => 'Estrategia',
+                'imagen_ruta' => 'scythe_rise_of_fenris.jpg',
+                'stock' => 10
+            ],
+            [
+                'nombre' => 'Terraforming Mars: Prelude',
+                'descripcion' => 'Terraforming Mars: Prelude es una expansión para el juego de mesa Terraforming Mars que agrega cartas de preludio que ofrecen a los jugadores bonificaciones iniciales y habilidades especiales que los ayudan a acelerar su desarrollo inicial en Marte.',
+                'precio' => '25.00',
+                'categoria' => 'Estrategia',
+                'imagen_ruta' => 'terraforming_mars_prelude.jpg',
+                'stock' => 8
+            ],
+            [
+                'nombre' => 'Wingspan: European Expansion',
+                'descripcion' => 'Wingspan: European Expansion es una expansión para el juego de mesa Wingspan que agrega nuevas cartas de aves basadas en especies europeas. También introduce nuevos tableros de jugador y componentes para ampliar la jugabilidad.',
+                'precio' => '30.00',
+                'categoria' => 'Familiar',
+                'imagen_ruta' => 'wingspan_european_expansion.jpg',
+                'stock' => 15
+            ],
+            [
+                'nombre' => 'Gloomhaven: Forgotten Circles',
+                'descripcion' => 'Gloomhaven: Forgotten Circles es una expansión para el juego de mesa Gloomhaven que agrega nuevos escenarios, enemigos y elementos de historia para continuar la aventura en el mundo de Gloomhaven.',
+                'precio' => '35.00',
+                'categoria' => 'Aventura',
+                'imagen_ruta' => 'gloomhaven_forgotten_circles.jpg',
+                'stock' => 5
             ],
         ];
 
