@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Juego;
 use App\Http\Controllers\JuegoController;
 use App\Http\Controllers\PurchaseController;
-use Illuminate\Support\Facades\Log;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,5 +28,7 @@ Route::get('image/{id}', function ($id) {
 });
 
 Route::get('/juegos', [JuegoController::class, 'index']);
+Route::post('/juegos', [JuegoController::class, 'store']);
 Route::get('/juegos/{id}', [JuegoController::class, 'obtenerJuego']);
-Route::get('/juegos/{nombre}}', [JuegoController::class, 'obtenerJuegoPorNombre']);
+Route::get('/juegos/{nombre}', [JuegoController::class, 'obtenerJuegoNombre']);
+Route::post('/juegos', 'JuegosController@store');
