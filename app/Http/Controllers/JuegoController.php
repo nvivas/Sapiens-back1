@@ -31,26 +31,8 @@ class JuegoController extends Controller
         }
     }
 
-    // public function store(Request $request)
-    // {
-    //     $validatedData = $request->validate([
-    //         'nombre' => 'required|string|max:255',
-    //         'descripcion' => 'required|string',
-    //         'precio' => 'required|numeric',
-    //         'categoria' => 'required|string|max:255',
-    //         'stock' => 'required|integer'
-    //     ]);
 
-    //     if ($request->hasFile('imagen_ruta')) {
-    //         $imagePath = $request->file('imagen_ruta')->store('imagen/juego');
-    //         $validatedData['imagen_ruta'] = $imagePath;
-    //     }
-
-    //     $juego = Juego::create($validatedData);
-
-    //     return response()->json($juego, 201);
-    // }
-
+    // Este método es para añadir juegos. De momento no funciona en el front
     public function store(Request $request)
     {
         $juego = new Juego();

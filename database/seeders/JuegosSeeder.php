@@ -79,7 +79,7 @@ class JuegosSeeder extends Seeder
                 'precio' => '140.00',
                 'categoria' => 'Aventura',
                 'imagen_ruta' => 'gloomhaven.jpg',
-                'descripcion_ingles' => '',
+                'descripcion_ingles' => 'Gloomhaven is a cooperative tabletop game with a dungeon-crawler style and a strong emphasis on character development. Players are part of a group of mercenaries in a dark and ever-changing world where decisions have lasting consequences.',
                 'stock' => 15
             ],
             [
@@ -88,7 +88,7 @@ class JuegosSeeder extends Seeder
                 'precio' => '80.00',
                 'categoria' => 'Estrategia',
                 'imagen_ruta' => 'scythe.jpg',
-                'descripcion_ingles' => 'Gloomhaven is a cooperative tabletop game with a dungeon-crawler style and a strong emphasis on character development. Players are part of a group of mercenaries in a dark and ever-changing world where decisions have lasting consequences.',
+                'descripcion_ingles' => 'Scythe is a strategy game set in an alternate universe of Eastern Europe in the 1920s. Players take on the role of leaders of a faction trying to expand their empire, harvest resources, and fight for control of the land',
                 'stock' => 20
             ],
             [

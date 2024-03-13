@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Juego;
 use App\Http\Controllers\JuegoController;
 use App\Http\Controllers\PurchaseController;
+use App\Http\Controllers\AuthController;
+
 
 /*
 |--------------------------------------------------------------------------
