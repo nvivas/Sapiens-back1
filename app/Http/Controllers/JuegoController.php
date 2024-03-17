@@ -41,7 +41,6 @@ class JuegoController extends Controller
         $juego->precio = $request->input('precio');
         $juego->categoria = $request->input('categoria');
         $juego->stock = $request->input('stock');
-        // Guarda la imagen en tu sistema de archivos o en la base de datos, según tu preferencia
         if ($request->hasFile('imagen')) {
             $imagenNombre = $request->file('imagen')->getClientOriginalName();
             $request->file('imagen')->storeAs('public/imagenes', $imagenNombre);

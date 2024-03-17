@@ -107,7 +107,7 @@ class JuegosSeeder extends Seeder
                 "categoria" => "Estrategia",
                 "imagen_ruta" => "terraforming_mars.jpg",
                 "descripcion_ingles" => "Terraforming Mars is a strategy game where players work together to transform Mars into a habitable planet. Players compete to accumulate resources and improve the planet's conditions to earn victory points.",
-                "stock" => 18
+                "stock" => 0
             ],
             [
                 "nombre" => "Everdell",
@@ -172,13 +172,138 @@ class JuegosSeeder extends Seeder
                 "descripcion_ingles" => "Gloomhaven: Forgotten Circles is an expansion for the board game Gloomhaven that adds new scenarios, enemies, and story elements to continue the adventure in the world of Gloomhaven.",
                 "stock" => 5
             ],
+            [
+                "nombre" => "Carcassonne",
+                "descripcion" => "Carcassonne es un juego de mesa en el que los jugadores construyen el paisaje de la región francesa de Carcassonne, colocando fichas y reclamando áreas con seguidores.",
+                "precio" => "20.00",
+                "categoria" => "Estrategia",
+                "imagen_ruta" => "carcassonne_juego.jpg",
+                "descripcion_ingles" => "Carcassonne is a board game where players build the landscape of the French region of Carcassonne by placing tiles and claiming areas with followers.",
+                "stock" => 8
+              ],
+              [
+                "nombre" => "Aventureros al tren",
+                "descripcion" => "Ticket to Ride es un juego de mesa en el que los jugadores coleccionan cartas de tren y construyen rutas de ferrocarril a través de América del Norte para completar objetivos y ganar puntos.",
+                "precio" => "30.00",
+                "categoria" => "Estrategia",
+                "imagen_ruta" => "ticket_to_ride.jpg",
+                "descripcion_ingles" => "Ticket to Ride is a board game where players collect train cards and build railroad routes across North America to complete objectives and earn points.",
+                "stock" => 6
+              ],
+              [
+                "nombre" => "Pandemic",
+                "descripcion" => "Pandemic es un juego de mesa cooperativo en el que los jugadores asumen el papel de científicos que trabajan juntos para detener la propagación de enfermedades y encontrar curas.",
+                "precio" => "28.00",
+                "categoria" => "Cooperativo",
+                "imagen_ruta" => "pandemic_1.jpg",
+                "descripcion_ingles" => "Pandemic is a cooperative board game where players take on the role of scientists working together to stop the spread of diseases and find cures.",
+                "stock" => 4
+              ],
+              [
+                "nombre" => "Dominion",
+                "descripcion" => "Dominion es un juego de mesa de construcción de mazos en el que los jugadores construyen sus propios mazos de cartas para acumular puntos y ganar la partida.",
+                "precio" => "22.00",
+                "categoria" => "Construcción de Mazos",
+                "imagen_ruta" => "dominion.jpg",
+                "descripcion_ingles" => "Dominion is a deck-building board game where players construct their own card decks to accumulate points and win the game.",
+                "stock" => 7
+              ],
+              [
+                "nombre" => "Azul",
+                "descripcion" => "Azul es un juego de mesa en el que los jugadores colocan fichas de cerámica en su tablero para completar patrones y obtener puntos.",
+                "precio" => "24.00",
+                "categoria" => "Estrategia",
+                "imagen_ruta" => "azul.jpg",
+                "descripcion_ingles" => "Azul is a board game where players place ceramic tiles on their board to complete patterns and earn points.",
+                "stock" => 9
+              ],
+              [
+                "nombre" => "Puerto Rico",
+                "descripcion" => "Puerto Rico es un juego de mesa de estrategia en el que los jugadores gestionan plantaciones y comercio en la isla de Puerto Rico para obtener puntos de victoria.",
+                "precio" => "32.00",
+                "categoria" => "Estrategia",
+                "imagen_ruta" => "puerto_rico.jpg",
+                "descripcion_ingles" => "Puerto Rico is a strategy board game where players manage plantations and trade on the island of Puerto Rico to earn victory points.",
+                "stock" => 5
+              ],
+              [
+                "nombre" => "Dixit",
+                "descripcion" => "Dixit es un juego de mesa de creatividad en el que los jugadores intentan adivinar qué carta ha elegido un narrador basándose en sus descripciones.",
+                "precio" => "18.00",
+                "categoria" => "Creatividad",
+                "imagen_ruta" => "dixit.jpg",
+                "descripcion_ingles" => "Dixit is a board game of creativity where players try to guess which card a storyteller has chosen based on their descriptions.",
+                "stock" => 10
+              ],
+              [
+                "nombre" => "King of Tokyo",
+                "descripcion" => "King of Tokyo es un juego de mesa de lucha de monstruos en el que los jugadores compiten por el control de la ciudad de Tokio y luchan entre sí para ser el rey.",
+                "precio" => "26.00",
+                "categoria" => "Lucha",
+                "imagen_ruta" => "king_of_tokyo.jpg",
+                "descripcion_ingles" => "King of Tokyo is a monster fighting board game where players compete for control of the city of Tokyo and battle each other to become the king.",
+                "stock" => 6
+              ],
+              [
+                "nombre" => "Agrícola",
+                "descripcion" => "Agrícola es un juego de mesa en el que los jugadores gestionan una granja, cultivan cultivos, crían animales y mejoran sus instalaciones para obtener la mayor cantidad de puntos.",
+                "precio" => "35.00",
+                "categoria" => "Gestión de Recursos",
+                "imagen_ruta" => "agricola.jpg",
+                "descripcion_ingles" => "Agricola is a board game where players manage a farm, cultivate crops, raise animals, and improve their facilities to earn the most points.",
+                "stock" => 7
+              ],
+              [
+                "nombre" => "Terra Mystica",
+                "descripcion" => "Terra Mystica es un juego de mesa de construcción de imperios en el que los jugadores controlan diferentes razas y trabajan para expandir sus territorios y desarrollar sus habilidades mágicas.",
+                "precio" => "42.00",
+                "categoria" => "Estrategia",
+                "imagen_ruta" => "terra_mystica.jpg",
+                "descripcion_ingles" => "Terra Mystica is an empire-building board game where players control different races and work to expand their territories and develop their magical abilities.",
+                "stock" => 4
+              ],
+              [
+                "nombre" => "7 Wonders",
+                "descripcion" => "7 Wonders es un juego de mesa de civilizaciones en el que los jugadores construyen maravillas, desarrollan tecnologías y establecen rutas comerciales para obtener puntos de victoria.",
+                "precio" => "28.00",
+                "categoria" => "Civilización",
+                "imagen_ruta" => "7_wonders.jpg",
+                "descripcion_ingles" => "7 Wonders is a civilization board game where players build wonders, develop technologies, and establish trade routes to earn victory points.",
+                "stock" => 8
+              ],
+              [
+                "nombre" => "Catan: Navegantes",
+                "descripcion" => "Catan: Navegantes es una expansión para el juego de mesa Catan que introduce nuevos elementos como barcos, islas y rutas comerciales para expandir la experiencia de juego.",
+                "precio" => "15.00",
+                "categoria" => "Expansión",
+                "imagen_ruta" => "catan_navegantes.jpg",
+                "descripcion_ingles" => "Catan: Seafarers is an expansion for the Catan board game that introduces new elements like ships, islands, and trade routes to expand the gameplay experience.",
+                "stock" => 10
+              ],
+              [
+                "nombre" => "Pandemic Legacy: Season 1",
+                "descripcion" => "Pandemic Legacy: Season 1 es un juego de mesa cooperativo de campaña en el que los jugadores luchan contra brotes de enfermedades y toman decisiones que afectan a la narrativa y al juego en futuras partidas.",
+                "precio" => "55.00",
+                "categoria" => "Cooperativo",
+                "imagen_ruta" => "pandemic_legacy.jpg",
+                "descripcion_ingles" => "Pandemic Legacy: Season 1 is a cooperative campaign board game where players battle disease outbreaks and make decisions that affect the narrative and gameplay in future sessions.",
+                "stock" => 2
+              ],
+              [
+                "nombre" => "Codenames",
+                "descripcion" => "Codenames es un juego de mesa de palabras en el que los jugadores intentan identificar las palabras de su equipo basándose en pistas dadas por un líder de equipo, evitando las palabras de los equipos rivales.",
+                "precio" => "18.00",
+                "categoria" => "Palabras",
+                "imagen_ruta" => "codenames.jpg",
+                "descripcion_ingles" => "Codenames is a word-based board game where players try to identify their team's words based on clues given by a spymaster, while avoiding the words of rival teams.",
+                "stock" => 9
+              ]
         ];
 
         foreach ($juegos as $juego) {
             Juego::updateOrCreate(
                 ['nombre' => $juego['nombre']],
-                $juego
-            )->save();
+                $juego)->save();
         }
     }
 }
