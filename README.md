@@ -25,9 +25,9 @@ Si se abre la BBDD se verá que se han creado las tablas que están descritas en
 
 ## Crear datos en la Base de Datos
 Se debe ejecutar el siguiente comando en la terminal para llenar la base de datos:
-`php artisan db:seed --class=JuegosSeeder` 
+- `php artisan db:seed --class=JuegosSeeder` 
 Esto hará que todo lo que hay en `Sapiens-back1/database/seeder/JuegosSeeder` se añada a la base de datos
 
 ## Compilar el proyecto
 Para compilar se debe ejecutar el siguiente comando en la terminal en el directorio del proyecto
-`php artisan serve`
+- `php artisan serve`
