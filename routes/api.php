@@ -34,3 +34,4 @@ Route::get('/juegos', [JuegoController::class, 'index']);
 Route::get('/juegos/{id}', [JuegoController::class, 'obtenerJuego']);
 Route::get('/juegos/{nombre}', [JuegoController::class, 'obtenerJuegoNombre']);
 Route::post('/juegos', 'JuegosController@store');
+Route::post('juegos/actualizar-stock/{id}', [JuegoController::class, 'actualizarStock']);

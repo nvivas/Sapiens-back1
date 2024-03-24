@@ -50,4 +50,18 @@ class JuegoController extends Controller
 
         return response()->json(['message' => 'Juego creado exitosamente'], 201);
     }
+
+    public function actualizarStock(Request $request) {
+        $juegoId = $request->input('juego_id');
+        $cantidadComprada = $request->input('cantidad_comprada');
+
+        $juego = Juego::find($juegoId);
+        if ($juego) {
+            $juego->stock -= $cantidadComprada;
+            $juego->save();
+            return response()->json(['message' => 'Stock actualizado correctamente'], 200);
+        } else {
+            return response()->json(['error' => 'Juego no encontrado'], 404);
+        }
+    }
 }
